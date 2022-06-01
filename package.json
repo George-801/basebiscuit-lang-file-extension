@@ -1,0 +1,25 @@
+{
+    "name": "bb-lang",
+    "displayName": "BaseBiscuit .lang syntax highlighting",
+    "description": "Syntax highlighting for .lang files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "lang",
+            "aliases": ["BB Language", "lang"],
+            "extensions": [".lang"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "lang",
+            "scopeName": "source.lang",
+            "path": "./syntaxes/lang.tmLanguage.json"
+        }]
+    }
+}
